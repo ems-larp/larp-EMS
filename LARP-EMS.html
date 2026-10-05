@@ -489,3 +489,15 @@ $('#send').addEventListener('click',async()=>{
 </script>
 </body>
 </html>
+if(n.toLowerCase()==='loco coco'){
+  ic='Loco Coco';
+  try{localStorage.setItem('ems_name','Loco Coco');}catch(e){}
+  isAdmin=true;
+  register();
+  updateName();
+  $('#iask').hidden=true;
+  $('#iwel').hidden=false;
+  $('#iwel').textContent='Willkommen, Loco Coco';
+  setTimeout(closeIntro,1200);
+  return;
+}
